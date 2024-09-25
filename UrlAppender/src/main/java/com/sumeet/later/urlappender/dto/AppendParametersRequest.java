@@ -10,12 +10,9 @@ import java.util.Map;
 @Data
 public class AppendParametersRequest {
 
-    @NotBlank(message = "ID cannot be blank")
-    private String id;
-    
     @NotBlank(message = "URL cannot be blank")
     @Pattern(regexp = "^(http|https)://.*$", message = "Invalid URL format")
-    private String url;
+    private String originalUrl;
 
     @NotEmpty(message = "Parameters cannot be empty")
     private Map<@NotBlank String, @NotBlank String> parameters;

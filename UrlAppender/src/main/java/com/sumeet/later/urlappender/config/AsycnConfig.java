@@ -21,5 +21,4 @@ public class AsycnConfig {
         executor.initialize();
         return executor;
     }
-
 }

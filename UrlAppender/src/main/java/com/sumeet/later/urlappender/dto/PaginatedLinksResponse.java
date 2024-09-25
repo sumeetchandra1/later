@@ -15,6 +15,6 @@ public class PaginatedLinksResponse implements Serializable {
 
     private static final long serialVersionUID = 1L;  // Ensure serialization works correctly
 
-    private List<Link> links;
+    private List<String> links;
     private String cursor;
 }
